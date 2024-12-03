@@ -57,7 +57,18 @@ print("*** PROBLEM 4.0: BASEBALL WINNERS POSITION")
 //Test your code by changing leaguePosition values and observe the results.
 
 //Now format the code above. How? Select the code (highlight) and use CONTROL-I. It usually corrects it to the
-
+let leaguePosition = 1
+switch leaguePosition {
+case 1:
+    print("Champions!")
+case 2:
+    print("Runners up")
+case 3:
+    print("Third place")
+default:
+    print("Bad season!")
+}
+          
 print("\n")
 
 
@@ -69,6 +80,12 @@ print("*** PROBLEM 4.1: MEDAL WINNERS")
     
 //Be sure test each case code by changing leaguePosition values
 
+switch leaguePosition {
+case 1...3:
+    print("Medal winner")
+default:
+    print("No medal awarded")
+}
 print("\n")
 
 print("SWITCH STATEMENT EXAMPLE FOR 4.2: AGE RANGES")
@@ -109,3 +126,19 @@ print("*** PROBLEM 4.2: HEART RANGE STATEMENTS")
  */
 
 //First declare a constant currentHR and for now give it a value of 128.
+
+let currentHR = 128
+switch currentHR {
+case 100...120:
+    print("You are in the Very Light zone. Activity in this zone helps with recovery.")
+case 121...140:
+    print("You are in the Light zone. Activity in this zone helps improve basice endurance and fat burning.")
+case 141...160: 
+    print("You are in the Moderate zone. Activity in this zone helps improve aerobic fitness.")
+case 161...180:
+    print("You are in the Hard zone. Activity in this zone increases maximum performance capacity for shorter sessions.")
+case 181...200:
+    print("You are in the Maximum zone. Activity in this zone helps fit athletes develop speed.")
+default:
+    print("You are in the Extra dangerous zone. This could harm your body. Please slow down.")
+}
